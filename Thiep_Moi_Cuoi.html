@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Thiệp Mời Cưới</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&display=swap"><style id="css">
+:root{--bg:#fbf1f1;--panel:#fff8f6;--ink:#3b1a20;--mute:#7d5f64;--btn:#7b1226;--on:#fff;--gold:#8a6a1f;--hi:#e6c57a;--hero:#7b1226;--line:#e6cfd1;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#220a10;--panel:#2e1018;--ink:#f6e6e6;--mute:#c7a4aa;--btn:#c43a52;--gold:#e0bf74;--hero:#5a0c1b;--line:#4d2630;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#220a10;--panel:#2e1018;--ink:#f6e6e6;--mute:#c7a4aa;--btn:#c43a52;--gold:#e0bf74;--hero:#5a0c1b;--line:#4d2630;color-scheme:dark}
+html{background:var(--hero);scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 16px/1.75 'Be Vietnam Pro',system-ui,sans-serif;text-align:center}
+body.hasbar{padding-bottom:76px}
+.f{font-family:'Cormorant Garamond',Georgia,serif}
+.s{font-family:'Great Vibes','Brush Script MT',cursive;font-weight:400}
+p{margin:6px 0}
+.mute{color:var(--mute);font-size:14px}
+.hero{position:relative;min-height:92vh;display:grid;place-items:center;padding:56px 28px;background:var(--hero);background-size:cover;background-position:center;color:var(--hi);overflow:hidden}
+.hero::before{content:"囍";position:absolute;inset:0;display:grid;place-items:center;font:400 min(92vw,420px)/1 'Noto Serif SC','Songti SC','PingFang SC',serif;opacity:.07;pointer-events:none}
+.hero::after{content:"";position:absolute;inset:14px;border:3px double rgba(230,197,122,.55);pointer-events:none}
+.hero>div{position:relative}
+.kick{font-size:24px;font-style:italic}
+.names{margin:12px 0 10px;font-size:clamp(54px,18vw,96px);line-height:1.02}
+.names span{display:block}
+.names em{display:block;font-size:.45em;font-style:normal;opacity:.8}
+.mo{font-size:26px;letter-spacing:.04em}
+.cd{display:flex;justify-content:center;gap:20px;margin-top:30px}
+.cd div{min-width:52px}
+.cd b{display:block;font:600 38px/1 'Cormorant Garamond',Georgia,serif}
+.cd small{display:block;font-size:12px;opacity:.8}
+@keyframes up{from{opacity:0;transform:translateY(14px)}}
+.hero>div>*{animation:up 1s both}
+.hero>div>:nth-child(2){animation-delay:.25s}.hero>div>:nth-child(3){animation-delay:.5s}.hero>div>:nth-child(4){animation-delay:.8s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+section{max-width:520px;margin:0 auto;padding:56px 26px;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+h2{margin:0 0 8px;font:600 32px/1.25 'Cormorant Garamond',Georgia,serif}
+h3{margin:0 0 4px;font:600 22px 'Cormorant Garamond',Georgia,serif;color:var(--gold)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:22px}
+.n{font-size:40px;line-height:1.2;color:var(--gold)}
+.d{margin:0;font:700 88px/1 'Cormorant Garamond',Georgia,serif;color:var(--btn)}
+.m{font-size:24px;font-weight:600}
+.b{display:inline-block;margin-top:14px;padding:12px 30px;border:0;border-radius:999px;background:var(--btn);color:var(--on);font:500 15px 'Be Vietnam Pro',system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.g{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.hero .g{color:var(--hi);border-color:rgba(230,197,122,.6)}
+.b:focus-visible,input:focus-visible,textarea:focus-visible,.o:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.pn{margin-top:20px;padding:22px 18px;background:var(--panel);border:1px solid var(--line);border-radius:14px;text-align:left}
+.pn label,.ed label{display:block;margin:0 0 12px;font-size:14px;color:var(--mute)}
+input,textarea{display:block;width:100%;margin:0 0 12px;padding:12px 14px;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px}
+textarea{min-height:90px;resize:vertical}
+.pn label input,.ed label input,.ed label textarea{margin:4px 0 0}
+.o{display:block;width:100%;margin:0 0 10px;padding:12px 14px;text-align:left;font:inherit;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:10px;cursor:pointer}
+.o[aria-pressed=true]{border-color:var(--btn);background:var(--btn);color:var(--on)}
+footer{padding:56px 28px;background:var(--hero);color:var(--hi)}
+footer .s{margin:0;font-size:56px;line-height:1.1}
+footer p{max-width:420px;margin:8px auto}
+.alb{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:20px}
+.ph{position:relative}
+.ph img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:6px}
+.x{position:absolute;top:6px;right:6px;width:28px;height:28px;padding:0;border:0;border-radius:50%;background:var(--btn);color:var(--on);font:500 18px/28px sans-serif;cursor:pointer}
+.only-e{display:none}
+.eon .only-e{display:block}
+.only-e input[type=date],.only-e input[type=time]{display:inline-block;width:auto;margin:8px 4px}
+.hero .only-e{margin-top:14px}
+.eon [data-k]{outline:1px dashed currentColor;outline-offset:3px;border-radius:3px;cursor:text;-webkit-user-select:text;user-select:text}
+.eon [data-k]:empty{display:inline-block;min-width:5em}
+.eon [data-k]:empty::before{content:"Nhấn để nhập";opacity:.5}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:15;display:flex;gap:10px;justify-content:center;padding:10px 12px calc(env(safe-area-inset-bottom,0px) + 10px);background:var(--bg);border-top:1px solid var(--line)}
+.bar .b{margin:0;flex:1;max-width:220px;padding:12px 10px}
+.toast{position:fixed;left:12px;right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 80px);z-index:30;max-width:480px;margin:0 auto;padding:10px 14px;border-radius:10px;background:var(--ink);color:var(--bg);font-size:14px}
+.ed{position:fixed;inset:0;z-index:20;overflow:auto;background:var(--bg);padding:calc(env(safe-area-inset-top,0px) + 20px) 20px calc(env(safe-area-inset-bottom,0px) + 28px);text-align:left}
+.edi{max-width:520px;margin:0 auto}
+.vh{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}
+.th{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 14px}
+.th div{position:relative}
+.th img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px}
+.mu{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);right:12px;z-index:12;margin:0;padding:8px 14px;font-size:13px;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+#fx{position:fixed;inset:0;z-index:5;overflow:hidden;pointer-events:none}
+.pt{position:absolute;top:-24px;border-radius:70% 0 70% 0;background:linear-gradient(135deg,#f7b7c5,#e86a86);opacity:.85;animation:fall linear infinite}
+.pt.go{background:linear-gradient(135deg,#f3d98d,#c9a24d)}
+@keyframes fall{0%{transform:translate3d(0,-24px,0) rotate(0)}25%{transform:translate3d(28px,28vh,0) rotate(120deg)}50%{transform:translate3d(-24px,56vh,0) rotate(240deg)}75%{transform:translate3d(26px,84vh,0) rotate(330deg)}100%{transform:translate3d(-10px,112vh,0) rotate(420deg)}}
+.sp{position:absolute;width:5px;height:5px;border-radius:50%;background:var(--hi);box-shadow:0 0 8px 2px rgba(230,197,122,.7);animation:tw 3s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(1)}}
+@keyframes beat{50%{opacity:.14;transform:scale(1.05)}}
+.hero::before{animation:beat 5s ease-in-out infinite}
+@keyframes shine{to{background-position:200% 0}}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){.names span{background:linear-gradient(90deg,var(--hi) 20%,#fff4cf 50%,var(--hi) 80%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:shine 6s linear infinite}}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .rv.in{opacity:1;transform:none}
+.js .d.rv{transform:scale(.7)}
+.js .d.rv.in{transform:none}
+.eon #fx{display:none}
+.eon .rv{opacity:1!important;transform:none!important}
+.bar .b{font-size:14px;padding:12px 6px}
+@media(prefers-reduced-motion:reduce){.pt,.sp{display:none}.js .rv{opacity:1;transform:none;transition:none}}
+#in{position:fixed;inset:0;z-index:40;display:grid;place-items:center;background:var(--hero);overflow:hidden;transition:opacity .9s ease}
+#in::before{content:"囍";position:absolute;inset:0;display:grid;place-items:center;font:400 min(120vw,520px)/1 'Noto Serif SC','Songti SC','PingFang SC',serif;color:#e6c57a;opacity:.06}
+#in.out{opacity:0;pointer-events:none}
+#in .g{position:absolute;right:14px;top:calc(env(safe-area-inset-top,0px) + 14px);margin:0;padding:8px 14px;font-size:13px;color:#e6c57a;border-color:rgba(230,197,122,.6)}
+.env{position:relative;width:min(80vw,340px);aspect-ratio:1.45;background:#f6dfd8;border-radius:6px;box-shadow:0 18px 50px rgba(0,0,0,.45);animation:envin 1s ease both}
+.env::after{content:"";position:absolute;inset:0;z-index:3;background:#efc9c1;clip-path:polygon(0 0,50% 55%,100% 0,100% 100%,0 100%);border-radius:6px}
+.fl{position:absolute;left:0;right:0;top:0;height:58%;background:#e4b0a6;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;z-index:4;animation:flap 1s ease 1s both}
+.ltr{position:absolute;left:6%;right:6%;top:8%;height:84%;background:#fffaf5;border-radius:4px;z-index:2;padding:14px 8px;text-align:center;color:#3b1a20;animation:ltr 1s ease 1.9s both}
+.ltr p{margin:0;font-size:12px}
+.ltr b{display:block;font-size:30px;line-height:1.15;color:#7b1226;font-weight:400}
+.ltr i{display:block;font-style:normal;font-size:14px;color:#8a6a1f}
+.sl{position:absolute;left:50%;top:52%;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e8c26a,#a9822f);color:#7b1226;display:grid;place-items:center;font:700 22px/1 serif;z-index:5;box-shadow:0 2px 6px rgba(0,0,0,.4);animation:seal .5s ease .8s both}
+@keyframes envin{from{opacity:0;transform:translateY(20px) scale(.92)}}
+@keyframes flap{50%{z-index:4}to{transform:rotateX(180deg);z-index:1}}
+@keyframes ltr{to{transform:translateY(-62%) scale(1.04)}}
+@keyframes seal{to{opacity:0;transform:scale(.4)}}
+body.intro{overflow:hidden}
+.intro .hero>div>*{animation-play-state:paused}
+.pt{background:none;border-radius:0;line-height:1;opacity:.92;text-shadow:0 0 6px rgba(255,255,255,.4)}
+@keyframes fall{0%{transform:translate3d(0,-30px,0) rotate(-15deg)}25%{transform:translate3d(24px,28vh,0) rotate(15deg)}50%{transform:translate3d(-22px,56vh,0) rotate(-12deg)}75%{transform:translate3d(22px,84vh,0) rotate(14deg)}100%{transform:translate3d(-8px,114vh,0) rotate(-10deg)}}
+.pw{position:relative;width:min(34vw,150px);margin:0 auto 12px}
+.pw.no{display:none}
+.eon .pw.no{display:block}
+.pf{display:flex;align-items:center;justify-content:center;position:relative;width:100%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:2px solid var(--gold);background:var(--panel);color:var(--mute);font-size:13px;pointer-events:none}
+.eon .pf{pointer-events:auto;cursor:pointer;border-style:dashed}
+.pf img{width:100%;height:100%;object-fit:cover;display:block}
+.pw .x{top:0;right:0}
+.two h3{margin-top:14px}
+.gn{margin:2px 0 10px}
+.eon .dt{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0}
+.dt label{display:block;margin:0;font-size:12px;color:var(--mute)}
+.dt input{width:60px;margin:2px 0 0;padding:10px 6px;text-align:center}
+.dt input[data-p=yy]{width:78px}
+.mo{font-size:40px;font-weight:600;letter-spacing:.08em}
+.ht{font-size:22px;letter-spacing:.04em}
+.mo,.ht{text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.hero>div>:nth-child(5){animation-delay:1s}
+.hero .dt label{color:var(--hi)}
+.hero>div>.dt{animation:none}
+.hero>div>:nth-child(6){animation-delay:1s}
+.mu{text-align:left}
+.mu small{display:block;max-width:46vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px;opacity:.85}
+</style></head><body><div id="app"></div><script type="application/json" id="data">{"groom":"Hoàng Dũng","bride":"Thúy Kiều","e1":"Lễ tiệc cưới","d1":"2026-11-28","t1":"16:00","l1":"Tức ngày 20 tháng 10 năm Bính Ngọ","v1":"Tư gia nhà trai","a1":"Số 12, đường Hoa Sữa, Hà Nội","e2":"Lễ thành hôn","d2":"2026-11-29","t2":"14:00","l2":"Tức ngày 21 tháng 10 năm Bính Ngọ","v2":"Tư gia nhà trai","a2":"","gp":"Ông Nguyễn Văn A\nBà Trần Thị B","bp":"Ông Lê Văn C\nBà Phạm Thị D","phone":"","thanks":"Cảm ơn bạn đã đến chung vui, hoặc đã nghĩ về chúng mình trong ngày này. Mỗi lời chúc và nụ cười của bạn sẽ ở lại trong kỷ niệm của đôi vợ chồng mới.","link":"https://claude.ai/artifact/YH5vMTsrDjZRj9L5zwoCeA","cover":"","photos":[]}</script><script id="js">
+(function(){
+var $=function(s){return document.querySelector(s)},
+esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})},
+W=['Chủ Nhật','Thứ Hai','Thứ Ba','Thứ Tư','Thứ Năm','Thứ Sáu','Thứ Bảy'],
+IM=/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+\/=]+$/,
+OKU=/^https:\/\/[a-z0-9.-]+\.(apple\.com|mzstatic\.com)\/[^\s"'<>]+$/i,
+AU=/^data:audio\/[a-z0-9.+-]+;base64,[A-Za-z0-9+\/=]+$/i,
+D={groom:'Hoàng Dũng',bride:'Thúy Kiều',
+e1:'Lễ tiệc cưới',d1:'2026-11-28',t1:'16:00',l1:'Tức ngày 20 tháng 10 năm Bính Ngọ',v1:'Tư gia nhà trai',a1:'Số 12, đường Hoa Sữa, Hà Nội',
+e2:'Lễ thành hôn',d2:'2026-11-29',t2:'14:00',l2:'Tức ngày 21 tháng 10 năm Bính Ngọ',v2:'Tư gia nhà trai',a2:'',
+gp:'Ông Nguyễn Văn A\nBà Trần Thị B',bp:'Ông Lê Văn C\nBà Phạm Thị D',phone:'',
+thanks:'Cảm ơn bạn đã đến chung vui, hoặc đã nghĩ về chúng mình trong ngày này. Mỗi lời chúc và nụ cười của bạn sẽ ở lại trong kỷ niệm của đôi vợ chồng mới.',
+link:'https://claude.ai/artifact/YH5vMTsrDjZRj9L5zwoCeA',cover:'',photos:[]},
+C='',P=[],M='',G='',B='',PL=null,PV=null,MN='',PN='',ch='yes',EM=false,TI,RT=function(){};
+var ODE_A='E4:1 E4:1 F4:1 G4:1 G4:1 F4:1 E4:1 D4:1 C4:1 C4:1 D4:1 E4:1 E4:1.5 D4:.5 D4:2 ',
+ODE_A2='E4:1 E4:1 F4:1 G4:1 G4:1 F4:1 E4:1 D4:1 C4:1 C4:1 D4:1 E4:1 D4:1.5 C4:.5 C4:2 ',
+ODE_B='D4:1 D4:1 E4:1 C4:1 D4:1 E4:.5 F4:.5 E4:1 C4:1 D4:1 E4:.5 F4:.5 E4:1 D4:1 C4:1 D4:1 G3:2 ',
+CG='C3+G3:4 ',GD='G2+D3:4 ',
+AC='C3:.5 G3:.5 E4:.5 G3:.5 C4:.5 G3:.5 E4:.5 G3:.5 ',
+AG='G2:.5 D3:.5 B3:.5 D3:.5 G3:.5 D3:.5 B3:.5 D3:.5 ',
+AA='A2:.5 E3:.5 C4:.5 E3:.5 A3:.5 E3:.5 C4:.5 E3:.5 ',
+AF='F2:.5 C3:.5 A3:.5 C3:.5 F3:.5 C3:.5 A3:.5 C3:.5 ',
+TR={
+canon:{n:'Canon in D (Pachelbel)',d:'Bản nhạc đám cưới quen thuộc, êm dịu.',q:'canon in d pachelbel dam cuoi lang man co dien',bpm:64,p:[
+[0,.3,'D3:2 A2:2 B2:2 F#2:2 G2:2 D2:2 G2:2 A2:2 '.repeat(3)],
+[2,.1,'D4+F#4+A4:2 A3+C#4+E4:2 B3+D4+F#4:2 F#3+A3+C#4:2 G3+B3+D4:2 D4+F#4+A4:2 G3+B3+D4:2 A3+C#4+E4:2 '.repeat(3)],
+[0,.24,'F#5:2 E5:2 D5:2 C#5:2 B4:2 A4:2 B4:2 C#5:2 D5:2 C#5:2 B4:2 A4:2 G4:2 F#4:2 G4:2 A4:2 D5:.5 F#5:.5 A5:.5 F#5:.5 C#5:.5 E5:.5 A5:.5 E5:.5 D5:.5 F#5:.5 B5:.5 F#5:.5 C#5:.5 F#5:.5 A5:.5 F#5:.5 B4:.5 D5:.5 G5:.5 D5:.5 A4:.5 D5:.5 F#5:.5 D5:.5 B4:.5 D5:.5 G5:.5 D5:.5 C#5:.5 E5:.5 A5:.5 E5:.5 ']]},
+ode:{n:'Ode to Joy (Beethoven)',d:'Giai điệu vui tươi, rộn ràng.',q:'ode to joy beethoven vui tuoi ron rang co dien',bpm:100,p:[[0,.45,ODE_A+ODE_A2+ODE_B+ODE_A2],[0,.15,CG+GD+CG+GD+CG+GD+CG+GD+GD+CG+GD+CG+CG+GD+GD+CG]]},
+elise:{n:'Für Elise (Beethoven)',d:'Piano dịu dàng, cổ điển.',q:'fur elise beethoven piano dieu dang co dien',bpm:96,p:[
+[0,.45,'E5:.25 D#5:.25 E5:.25 D#5:.25 E5:.25 B4:.25 D5:.25 C5:.25 A4:.5 R:.25 C4:.25 E4:.25 A4:.25 B4:.5 R:.25 E4:.25 G#4:.25 B4:.25 C5:.5 R:.25 E4:.25 E5:.25 D#5:.25 E5:.25 D#5:.25 E5:.25 B4:.25 D5:.25 C5:.25 A4:.5 R:.25 C4:.25 E4:.25 A4:.25 B4:.5 R:.25 E4:.25 C5:.25 B4:.25 A4:1.5 R:.5 '],
+[0,.2,'R:2 A2+E3+A3:1.5 E2+E3+G#3:1.5 A2+E3+A3:1.5 R:1.5 A2+E3+A3:1.5 E2+E3+G#3:1.5 A2+E3+A3:2 ']]},
+piano:{n:'Piano lãng mạn (tự soạn)',d:'Piano nhẹ nhàng, chậm rãi, hợp nền thiệp cưới.',q:'piano lang man nhe nhang cuoi tu soan',bpm:72,p:[
+[0,.32,'E5:1.5 D5:.5 C5:1 D5:1 B4:1.5 C5:.5 D5:2 C5:1.5 B4:.5 A4:1 C5:1 A4:1 G4:1 F4:2 G5:1.5 E5:.5 D5:1 C5:1 B4:1 D5:1 G5:2 E5:1.5 D5:.5 C5:1 A4:1 C5:1 A4:1 G4:2 '],
+[0,.16,AC+AG+AA+AF+AC+AG+AA+AF]]},
+box:{n:'Hộp nhạc (tự soạn)',d:'Tiếng chuông nhỏ trong trẻo, dễ thương.',q:'hop nhac chuong dang yeu tu soan',bpm:84,p:[
+[1,.3,'G5:1 E5:1 G5:1 A5:1 G5:1 E5:1 D5:2 E5:1 G5:1 A5:1 C6:1 A5:1 G5:1 E5:2 '],
+[0,.14,'C3+G3:4 F2+C3:4 C3+G3:4 G2+D3:4 ']]},
+day:{n:'Dàn dây êm (tự soạn)',d:'Hòa âm nền êm, kéo dài, không lời.',q:'dan day em hoa am nen thu gian tu soan',bpm:60,p:[
+[2,.12,'D3+A3+F#4:8 B2+F#3+D4:8 G2+D3+B3:8 A2+E3+C#4:8 '],
+[1,.07,'A5:4 F#5:4 D5:4 B4:4 B5:4 G5:4 E5:4 C#5:4 ']]}
+};
+try{Object.assign(D,JSON.parse($('#data').textContent))}catch(e){}
+function load(){C=IM.test(D.cover||'')?D.cover:'';P=(D.photos||[]).filter(function(u){return IM.test(u)});M=okm(D.music)?D.music:'';MN=String(D.mn||'').slice(0,80);G=IM.test(D.pg||'')?D.pg:'';B=IM.test(D.pb||'')?D.pb:''}
+load();
+function dt(s){var d=new Date(s+'T00:00:00');return isNaN(d)?null:d}
+function pn(t){return esc(t).replace(/\n/g,'<br>')}
+function PH(){return(D.phone||'').replace(/[^\d+]/g,'')}
+function rz(f,m){return new Promise(function(ok,no){var r=new FileReader();r.onload=function(){var i=new Image();i.onload=function(){var s=Math.min(1,m/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=Math.round(i.width*s);c.height=Math.round(i.height*s);c.getContext('2d').drawImage(i,0,0,c.width,c.height);ok(c.toDataURL('image/jpeg',.78))};i.onerror=no;i.src=r.result};r.onerror=no;r.readAsDataURL(f)})}
+function dtg(n){var ds=String(D['d'+n]||'').split('-'),ts=String(D['t'+n]||'').split(':');return '<div class="only-e dt" data-n="'+n+'"><input type="hidden" data-i="d'+n+'" value="'+esc(D['d'+n])+'"><input type="hidden" data-i="t'+n+'" value="'+esc(D['t'+n])+'">'+[['dd','Ngày',ds[2]],['mm','Tháng',ds[1]],['yy','Năm',ds[0]],['hh','Giờ',ts[0]],['mi','Phút',ts[1]]].map(function(f){return '<label>'+f[1]+'<input inputmode="numeric" maxlength="'+(f[0]=='yy'?4:2)+'" data-p="'+f[0]+'" value="'+esc(f[2]||'')+'"></label>'}).join('')+'</div>'}
+function ev(n){var d=dt(D['d'+n]),a=D['a'+n],h=n==2&&!d,ds=String(D['d'+n]||'').split('-'),ts=String(D['t'+n]||'').split(':');
+return '<section id="ev'+n+'"'+(h?' class="only-e"':'')+'><h2 data-k="e'+n+'">'+pn(D['e'+n])+'</h2><p class="d" id="dd'+n+'">'+(d?d.getDate():'')+'</p><p class="f m" id="dm'+n+'">'+(d?'tháng '+(d.getMonth()+1)+' năm '+d.getFullYear():'')+'</p>'
++(n==2?dtg(n):'')
++'<p class="mute" data-k="l'+n+'">'+pn(D['l'+n])+'</p>'
++'<p><span data-k="v'+n+'">'+pn(D['v'+n])+'</span><br><span data-k="a'+n+'">'+pn(a)+'</span></p>'
++'<p>được tổ chức vào lúc <b id="dt'+n+'">'+esc(D['t'+n])+(d?', '+W[d.getDay()]:'')+'</b></p>'
++'</section>'}
+function page(){var d1=dt(D.d1);
+return `<header class="hero"><div>
+<p class="kick f" data-k="kick">${pn(D.kick||'Save the date')}</p>
+<h1 class="names s"><span data-k="groom">${pn(D.groom)}</span><em>&amp;</em><span data-k="bride">${pn(D.bride)}</span></h1>
+<p class="mo f" id="mo">${d1?z2(d1.getDate())+'.'+z2(d1.getMonth()+1)+'.'+d1.getFullYear():''}</p><p class="ht f" id="hdt">${[D.t1,d1?W[d1.getDay()]:''].filter(Boolean).join(', ')}</p>${dtg(1)}
+<div class="cd" id="cd"></div>
+<div class="only-e"><label class="b g">Chọn ảnh bìa<input type="file" accept="image/*" id="fc" class="vh"></label> <button class="b g" id="rc">Xóa ảnh bìa</button></div>
+</div></header>
+<section><p class="mute" data-k="inv">${pn(D.inv||'Trân trọng kính mời')}</p><p class="s n gn${GN()?'':' only-e'}" data-k="gn">${pn(GN())}</p><h2 data-k="inv2">${pn(D.inv2||'đến dự và chia sẻ niềm vui')}</h2>
+<div class="two"><div>${fr('g')}<p class="mute" data-k="lgl">${pn(D.lgl||'Chú rể')}</p><p class="s n" data-k="groom">${pn(D.groom)}</p><h3 data-k="lg">${pn(D.lg||'Nhà trai')}</h3><p data-k="gp">${pn(D.gp)}</p></div><div>${fr('b')}<p class="mute" data-k="lbl">${pn(D.lbl||'Cô dâu')}</p><p class="s n" data-k="bride">${pn(D.bride)}</p><h3 data-k="lb">${pn(D.lb||'Nhà gái')}</h3><p data-k="bp">${pn(D.bp)}</p></div></div></section>
+${ev(1)}${ev(2)}
+<section id="as" class="only-e"><h2>Album ảnh cưới</h2><div class="alb" id="alb"></div><div class="only-e"><label class="b g">Thêm ảnh album<input type="file" accept="image/*" multiple id="fa" class="vh"></label></div></section>
+<footer><p class="s" data-k="ty">${pn(D.ty||'Thank you')}</p><p data-k="thanks">${pn(D.thanks)}</p></footer>`}
+function cd(){var t=new Date(D.d1+'T'+(D.t1||'00:00')+':00+07:00').getTime(),el=$('#cd'),U=['Ngày','Giờ','Phút','Giây'];if(isNaN(t))return;
+function k(){var d=Math.max(0,t-Date.now()),v=[d/864e5,d%864e5/36e5,d%36e5/6e4,d%6e4/1e3];el.innerHTML=v.map(function(x,i){return '<div><b>'+String(Math.floor(x)).padStart(2,'0')+'</b><small>'+U[i]+'</small></div>'}).join('')}
+k();clearInterval(TI);TI=setInterval(k,1000)}
+function rs(){var bs=document.querySelectorAll('.o');
+bs.forEach(function(b){b.onclick=function(){ch=b.dataset.v;bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)})}});
+$('#go').onclick=function(){var n=$('#nm').value.trim(),w=$('#wt').value.trim(),o=$('#ok');
+if(!PH()){o.textContent='Chủ thiệp chưa thêm số điện thoại nhận xác nhận.';o.hidden=false;return}
+if(!n){$('#nm').focus();return}
+var m='Xác nhận tham dự: '+n+', '+(ch=='yes'?'sẽ đến dự':'rất tiếc không thể đến')+'.'+(w?' Lời chúc: '+w:''),
+a=document.createElement('a');a.href='sms:'+PH()+'?&body='+encodeURIComponent(m);a.target='_blank';a.rel='noopener';a.click();
+o.textContent='Đã mở tin nhắn, bạn nhấn gửi để hoàn tất nhé.';o.hidden=false}}
+function drawAlb(){var el=$('#alb');el.textContent='';
+P.forEach(function(u,i){var d=document.createElement('div'),im=document.createElement('img'),b=document.createElement('button');d.className='ph';im.src=u;im.alt='Ảnh cưới';im.loading='lazy';b.className='x only-e';b.textContent='×';b.setAttribute('aria-label','Xóa ảnh');b.onclick=function(){P.splice(i,1);drawAlb()};d.append(im,b);el.appendChild(d)});
+$('#as').classList.toggle('only-e',!P.length)}
+function setCover(){$('.hero').style.backgroundImage=C?'linear-gradient(rgba(50,4,14,.62),rgba(50,4,14,.62)),url('+C+')':''}
+function ud(n){var d=dt($('[data-i=d'+n+']').value),t=$('[data-i=t'+n+']').value;
+$('#dd'+n).textContent=d?d.getDate():'';$('#dm'+n).textContent=d?'tháng '+(d.getMonth()+1)+' năm '+d.getFullYear():'';$('#dt'+n).textContent=[t,d?W[d.getDay()]:''].filter(Boolean).join(', ');
+if(n==1){$('#mo').textContent=d?z2(d.getDate())+'.'+z2(d.getMonth()+1)+'.'+d.getFullYear():'';$('#hdt').textContent=[t,d?W[d.getDay()]:''].filter(Boolean).join(', ')}}
+function cmp(t){var w=t.closest('.dt'),n=w.dataset.n,g=function(k){return w.querySelector('[data-p='+k+']').value.replace(/\D/g,'')},
+dd=g('dd'),mm=g('mm'),yy=g('yy'),hh=g('hh'),mi=g('mi'),z=function(x,l){return('0000'+x).slice(-l)},dv='',tv='';
+if(dd&&mm&&yy.length==4){var q=new Date(+yy,+mm-1,+dd);if(q.getFullYear()==+yy&&q.getMonth()==+mm-1&&q.getDate()==+dd)dv=yy+'-'+z(mm,2)+'-'+z(dd,2)}
+if(hh&&+hh<24&&(!mi||+mi<60))tv=z(hh,2)+':'+z(mi||'0',2);
+w.querySelector('[data-i=d'+n+']').value=dv;w.querySelector('[data-i=t'+n+']').value=tv;ud(n)}
+function toast(t){var e=$('#toast');if(!e){e=document.createElement('div');e.id='toast';e.className='toast';e.setAttribute('role','status');document.body.appendChild(e)}e.textContent=t;e.hidden=false;clearTimeout(e.t);e.t=setTimeout(function(){e.hidden=true},5000)}
+function cp(s,b){function ok(){b.textContent='Đã sao chép'}function fb(){try{var t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();ok()}catch(e){}}try{navigator.clipboard.writeText(s).then(ok,fb)}catch(e){fb()}}
+function build(d){return '<!DOCTYPE html>\n<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Thiệp Mời Cưới</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="'+$('link[rel=stylesheet]').href+'"><style id="css">'+$('#css').textContent+'</style></head><body><div id="app"></div><script type="application/json" id="data">'+JSON.stringify(d).replace(/</g,'\\u003c')+'<\/script><script id="js">'+$('#js').textContent+'<\/script></body></html>'}
+async function dl(N,fn){var h=build(N),d=null;
+try{d=(typeof claude!=='undefined'&&claude&&typeof claude.use==='function')?await claude.use('downloads'):null}catch(e){}
+if(d)return d.save({filename:fn||'thiep-cuoi.html',data:h});
+var l=document.createElement('a');l.href=URL.createObjectURL(new Blob([h],{type:'text/html'}));l.download=fn||'thiep-cuoi.html';document.body.appendChild(l);l.click();l.remove()}
+function mode(on){EM=on;document.body.classList.toggle('eon',on);
+document.querySelectorAll('[data-k]').forEach(function(e){if(on)e.setAttribute('contenteditable','true');else e.removeAttribute('contenteditable')});bar()}
+function bar(){var b=$('#bar');if(!b){b=document.createElement('div');b.id='bar';b.className='bar';document.body.appendChild(b);document.body.classList.add('hasbar')}
+b.innerHTML=EM?'<button class="b g" id="ap">Ảnh và nhạc</button><button class="b" id="sv">Lưu thiệp</button><button class="b g" id="cn">Hủy</button>':'<button class="b g" id="ap">Ảnh và nhạc</button><button class="b g" id="ee">Chỉnh sửa</button><button class="b" id="iv">Lưu file mời</button>';
+$('#ap').onclick=photos;
+if(EM){$('#sv').onclick=save;$('#cn').onclick=function(){load();start();setMusic();mode(false)}}
+else{$('#ee').onclick=function(){mode(true);toast('Chạm vào chữ để sửa. Chạm khung tròn phía trên tên để thêm ảnh chú rể, cô dâu. Ngày giờ sửa ngay trong từng buổi lễ.')};$('#iv').onclick=invite}}
+async function save(){var N=Object.assign({},D),s=$('#sv')||$('#ps')||{};
+document.querySelectorAll('[data-k]').forEach(function(e){N[e.dataset.k]=e.innerText.trim()});
+document.querySelectorAll('[data-i]').forEach(function(e){N[e.dataset.i]=e.value.trim()});
+N.cover=C;N.photos=P;N.music=M;N.mn=MN;N.pg=G;N.pb=B;
+if(!N.groom||!N.bride||!dt(N.d1)){toast('Cần có tên cô dâu, chú rể và ngày của lễ 1.');return}
+s.disabled=true;toast('Đang lưu…');
+try{var a=(typeof claude!=='undefined'&&claude&&typeof claude.use==='function')?await claude.use('artifact'):null;
+if(a){try{sessionStorage.setItem('inv','1')}catch(e){}await a.publish(build(N));toast('Đã lưu.');return}
+N.guest=true;await dl(N);Object.assign(D,N);var z=$('.ed');if(z)z.remove();start();mode(false);toast('Đã lưu file thiệp mời khách (thiep-cuoi.html). Bạn gửi file này cho khách hoặc đưa lên web của bạn.')}
+catch(e){s.disabled=false;toast(e&&e.code==='declined'?'Bạn chưa lưu file.':'Chưa lưu được, thử lại sau nhé.')}}
+async function invite(){if($('.ed'))return;var o=document.createElement('div');o.className='ed';
+o.innerHTML='<div class="edi"><h2>Lưu file mời</h2><p class="mute">Nhập tên khách, mỗi dòng một người. Mỗi người sẽ có một file thiệp riêng, ghi tên họ ngay dưới dòng Trân trọng kính mời. Để trống nếu muốn một file chung cho mọi người.</p><label>Tên khách mời<textarea id="gl" placeholder="Anh Minh&#10;Chị Lan"></textarea></label><button class="b" id="gs">Lưu file</button> <button class="b g" id="gx">Đóng</button><p class="mute" id="gt" role="status"></p></div>';
+document.body.appendChild(o);
+$('#gx').onclick=function(){o.remove()};
+$('#gs').onclick=async function(){var b=this,ns=$('#gl').value.split('\n').map(function(x){return x.trim()}).filter(Boolean),t=$('#gt'),ok=0;b.disabled=true;
+if(!ns.length)ns=[''];
+for(var i=0;i<ns.length;i++){var n=ns[i],sl=n.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-+|-+$/g,'').toLowerCase();
+t.textContent='Đang lưu '+(i+1)+'/'+ns.length+'…';
+try{await dl(Object.assign({},D,{guest:true,gn:n}),'thiep-'+(sl||'cuoi')+'.html');ok++}
+catch(e){if(e&&e.code==='declined')break}}
+b.disabled=false;t.textContent=ok?'Đã lưu '+ok+' file. Bạn gửi từng file cho đúng người nhé.':'Chưa lưu được file nào.'}}
+function intro(){var seen=null;try{seen=sessionStorage.getItem('seen')}catch(e){}
+if(seen||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))return;
+try{sessionStorage.setItem('seen','1')}catch(e){}
+var o=document.createElement('div');o.id='in';o.setAttribute('role','dialog');o.setAttribute('aria-label','Mở thiệp');
+o.innerHTML='<div class="env"><div class="ltr"><p>'+esc(GN()||'Trân trọng kính mời')+'</p><b class="s">'+esc(D.groom)+'</b><i>&amp;</i><b class="s">'+esc(D.bride)+'</b></div><div class="fl"></div><div class="sl">囍</div></div><button class="b g" id="sk">Bỏ qua</button>';
+document.body.appendChild(o);document.body.classList.add('intro');
+function end(){if(o.classList.contains('out'))return;o.classList.add('out');document.body.classList.remove('intro');setTimeout(function(){o.remove()},900)}
+o.onclick=end;setTimeout(end,4000)}
+function fx(){document.documentElement.classList.add('js');
+var f=$('#fx');
+if(!f){f=document.createElement('div');f.id='fx';f.setAttribute('aria-hidden','true');document.body.appendChild(f);
+var cl=['#e0102f','#d90429','#ef233c','#c8102e','#ff1f3d'];
+for(var i=0;i<22;i++){var p=document.createElement('i');p.className='pt';p.textContent='♥';p.style.cssText='left:'+(Math.random()*100)+'%;font-size:'+(12+Math.random()*16)+'px;color:'+cl[i%cl.length]+';animation-duration:'+(9+Math.random()*9)+'s;animation-delay:-'+(Math.random()*18)+'s';f.appendChild(p)}}
+var h=$('.hero');
+if(h)for(var j=0;j<14;j++){var d=document.createElement('i');d.className='sp';d.style.cssText='left:'+(6+Math.random()*88)+'%;top:'+(6+Math.random()*88)+'%;animation-delay:'+(Math.random()*3)+'s;animation-duration:'+(2.4+Math.random()*2.4)+'s';h.appendChild(d)}
+var els=document.querySelectorAll('#app section,#app .d');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});els.forEach(function(e){e.classList.add('rv');io.observe(e)})}}
+function z2(x){return('0'+x).slice(-2)}
+function GN(){var q='';try{var u=new URLSearchParams(location.search);q=u.get('ten')||u.get('khach')||''}catch(e){}return(q||D.gn||'').trim().slice(0,60)}
+function fr(k){var u=k=='g'?G:B;
+return '<div class="pw'+(u?'':' no')+'" id="w'+k+'"><label class="pf'+(u?' has':'')+'">'+(u?'<img src="'+u+'" alt="">':'<span>+ Thêm ảnh</span>')+'<input type="file" accept="image/*" id="f'+k+'" class="vh"></label>'+(u?'<button class="x only-e" id="r'+k+'" aria-label="Xóa ảnh">×</button>':'')+'</div>'}
+function bindPh(k){var i=$('#f'+k),r=$('#r'+k);
+i.onchange=async function(){var f=this.files[0];this.value='';if(!f)return;try{var u=await rz(f,600);if(k=='g')G=u;else B=u;setPh(k)}catch(e){toast('Chưa đọc được ảnh này.')}};
+if(r)r.onclick=function(){if(k=='g')G='';else B='';setPh(k)}}
+function setPh(k){$('#w'+k).outerHTML=fr(k);bindPh(k)}
+function norm(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D').toLowerCase()}
+function okm(m){m=m||'';return AU.test(m)||(/^url:/.test(m)&&OKU.test(m.slice(4)))||(/^lib:[a-z0-9]+$/.test(m)&&!!TR[m.slice(4)])}
+function hz(n){var m=/^([A-G])(#|b)?(\d)$/.exec(n),b={C:0,D:2,E:4,F:5,G:7,A:9,B:11};return 440*Math.pow(2,((12*(+m[3]+1)+b[m[1]]+(m[2]=='#'?1:m[2]=='b'?-1:0))-69)/12)}
+function tone(c,out,t,f,d,v,k){var g=c.createGain(),o=c.createOscillator(),o2=c.createOscillator(),g2=c.createGain(),e=t+(k==2?d*1.1:Math.min(Math.max(d*1.6,.6),2.6));
+o.type='triangle';o2.type='sine';o.frequency.value=f;o2.frequency.value=f*(k==1?3:2);g2.gain.value=k==1?.45:.25;
+g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(v,t+(k==2?Math.min(d*.4,1.5):.012));g.gain.exponentialRampToValueAtTime(.0001,e);
+o.connect(g);o2.connect(g2);g2.connect(g);g.connect(out);o.start(t);o2.start(t);o.stop(e+.05);o2.stop(e+.05)}
+function chain(c){var m=c.createGain(),dl=c.createDelay(),fb=c.createGain(),lp=c.createBiquadFilter();m.gain.value=.5;dl.delayTime.value=.3;fb.gain.value=.35;lp.type='lowpass';lp.frequency.value=3400;m.connect(lp);lp.connect(c.destination);lp.connect(dl);dl.connect(fb);fb.connect(dl);dl.connect(c.destination);return m}
+function sched(c,m,T,t0){var s=60/T.bpm,end=0;T.p.forEach(function(p){var b=0;p[2].split(' ').forEach(function(x){if(!x)return;var a=x.split(':'),d=+a[1];if(a[0]!='R')a[0].split('+').forEach(function(n){tone(c,m,t0+b*s,hz(n),d*s,p[1],p[0])});b+=d});end=Math.max(end,b)});return end*s}
+function synthPlayer(id){var T=TR[id],c=null,m=null,tm=0,nx=0,left=0,self={paused:true,id:'au'};
+function run(){var L=sched(c,m,T,nx);nx+=L;tm=setTimeout(run,Math.max(300,(L-.5)*1000))}
+self.play=function(){var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return Promise.reject(new Error('noaudio'));
+if(!c){c=new AC();m=chain(c);nx=c.currentTime+.15;run()}else{c.resume();tm=setTimeout(run,left*1000)}
+self.paused=false;if(self.onplay)self.onplay();return Promise.resolve()};
+self.pause=function(){if(!c||self.paused)return;c.suspend();clearTimeout(tm);left=Math.max(0,nx-c.currentTime-.5);self.paused=true;if(self.onpause)self.onpause()};
+self.remove=function(){clearTimeout(tm);if(c){try{c.close()}catch(e){}}c=null;self.paused=true};
+return self}
+function mk(m){if(/^lib:/.test(m))return synthPlayer(m.slice(4));var a=document.createElement('audio');a.id='au';a.loop=true;a.preload='auto';a.src=/^url:/.test(m)?m.slice(4):m;document.body.appendChild(a);return a}
+function stopPv(){if(PV){PV.pause();PV.remove();PV=null}}
+function prev(k){var on=PV&&PV.k==k&&!PV.paused;stopPv();if(on)return;if(PL&&!PL.paused)PL.pause();PV=synthPlayer(k);PV.k=k;var p=PV.play();if(p&&p.catch)p.catch(function(){toast('Chưa phát được nhạc, hãy thử lại.')})}
+function mtitle(){return !M?'':/^lib:/.test(M)?((TR[M.slice(4)]||{}).n||''):MN}
+function setMusic(){var a=PL,b=$('#mu');document.removeEventListener('click',setMusic.f);if(a){a.pause();if(a.remove)a.remove();PL=null}
+if(!b){b=document.createElement('button');b.id='mu';b.className='b mu';b.hidden=true;document.body.appendChild(b)}
+if(!M){b.hidden=true;return}
+a=mk(M);PL=a;
+function ui(){b.textContent='';b.appendChild(document.createTextNode(a.paused?'♪ Bật nhạc':'♪ Tắt nhạc'));var t=mtitle();if(t){var sm=document.createElement('small');sm.textContent=t;b.appendChild(sm)}}
+function pl(){var p=a.play();if(p&&p.catch)p.catch(function(){toast('Chưa phát được nhạc, hãy thử lại.')})}
+function first(e){if(EM||$('#bar')||(e.target.closest&&e.target.closest('#mu')))return;var p=a.play();if(p&&p.catch)p.catch(function(){});document.removeEventListener('click',first)}
+a.onplay=a.onpause=ui;a.onerror=function(){toast('Không phát được file nhạc này.')};
+b.onclick=function(){if(a.paused)pl();else a.pause();document.removeEventListener('click',first)};
+setMusic.f=first;document.addEventListener('click',first);b.hidden=false;ui()}
+var SM=[{t:'Có Chàng Trai Viết Lên Cây',a:'Phan Mạnh Quỳnh',q:'Có Chàng Trai Viết Lên Cây Phan Mạnh Quỳnh'},{t:'Hơn Cả Yêu',a:'Đức Phúc',q:'Hơn Cả Yêu Đức Phúc'},{t:'Cưới Thôi',a:'Masew, Masiu, B Ray, TAP',q:'Cưới Thôi Masew'},{t:'Perfect',a:'Ed Sheeran',q:'Perfect Ed Sheeran'},{t:'A Thousand Years',a:'Christina Perri',q:'A Thousand Years Christina Perri'}],
+OQ='',OR=[],OS=0,NET='Chưa kết nối được kho nhạc trực tuyến. Cần có internet, và mở file thiệp trực tiếp bằng trình duyệt (không phải trong khung xem trước của Claude).';
+function jsonp(u){return new Promise(function(ok,no){var n='itcb'+Date.now()+Math.floor(Math.random()*1e4),sc=document.createElement('script'),t=setTimeout(function(){cl();no(new Error('to'))},8000);function cl(){clearTimeout(t);delete window[n];sc.remove()}window[n]=function(j){cl();ok(j)};sc.onerror=function(){cl();no(new Error('err'))};sc.src=u+'&callback='+n;document.head.appendChild(sc)})}
+async function srch(q,n){var out=[],cs=['&country=VN',''];
+for(var i=0;i<cs.length;i++){var u='https://itunes.apple.com/search?media=music&entity=song&limit='+(n||8)+cs[i]+'&term='+encodeURIComponent(q),j;try{j=await (await fetch(u)).json()}catch(e){j=await jsonp(u)}
+out=(j.results||[]).filter(function(x){return x.previewUrl&&OKU.test(x.previewUrl)}).map(function(x){return{t:x.trackName,a:x.artistName,u:x.previewUrl}});if(out.length)break}
+return out}
+async function rsm(x){if(x.u)return x;var l=await srch(x.q||x.t+' '+x.a,5),k=norm(x.t),m=l.filter(function(y){return norm(y.t).indexOf(k)>-1})[0]||l[0];if(!m)throw new Error('none');x.u=m.u;x.ra=m.a;return x}
+function photos(){var z=$('.ed');if(z)z.remove();var o=document.createElement('div');o.className='ed';
+o.innerHTML='<div class="edi"><h2>Ảnh và nhạc</h2><p class="mute">Ảnh bìa nằm ở đầu thiệp, ảnh album hiện ở cuối thiệp (tối đa 12 ảnh). Nhạc nền: nhập tên bài hát để nghe thử rồi chọn. Nhấn Lưu thiệp để ảnh và nhạc được lưu vào thiệp.</p><h3>Ảnh bìa</h3><div class="th" id="tc"></div><button class="b g" id="pc">Chọn ảnh bìa</button><h3 style="margin-top:22px">Ảnh album</h3><div class="th" id="ta"></div><button class="b g" id="pa">Thêm ảnh album</button><h3 style="margin-top:22px">Nhạc nền</h3><p class="mute" id="mt"></p><label>Nhập tên bài hát (có thể thêm tên ca sĩ)<input id="mq" placeholder="Ví dụ: Hơn Cả Yêu Đức Phúc"></label><div id="ml"></div><p class="mute">Nhạc được lấy trực tiếp từ chính bài hát đó (bản nghe thử khoảng 30 giây, tự lặp lại), cần có internet.</p><button class="b g" id="pr">Xóa nhạc</button><p class="mute" id="pt" role="status"></p><button class="b" id="ps">Lưu thiệp</button> <button class="b g" id="px">Đóng</button></div>';
+document.body.appendChild(o);
+function th(){if(!$('#tc'))return;[['#tc',C?[C]:[],function(){C='';setCover()}],['#ta',P,function(i){P.splice(i,1);drawAlb()}]].forEach(function(g){var el=$(g[0]);el.textContent='';g[1].forEach(function(u,i){var d=document.createElement('div'),im=document.createElement('img'),b=document.createElement('button');im.src=u;im.alt='';b.className='x';b.textContent='×';b.setAttribute('aria-label','Xóa ảnh');b.onclick=function(){g[2](i);th()};d.append(im,b);el.appendChild(d)})});$('#pt').textContent=(C?'Đã có ảnh bìa. ':'Chưa có ảnh bìa. ')+P.length+'/12 ảnh album.';$('#mt').textContent=!M?'Chưa có nhạc nền.':'Đang dùng: '+MN+'. Bấm nút Bật nhạc ở góc phải để nghe thử.'}
+var ST=0;
+async function pv2(k,it){var on=PV&&PV.k==k&&!PV.paused;stopPv();if(on){ml();return}
+if(!it.u){toast('Đang tìm bài…');try{await rsm(it)}catch(e){toast(NET);return}}
+if(PL&&!PL.paused)PL.pause();var a=new Audio(it.u);a.k=k;a.onpause=a.onended=function(){ml()};a.onerror=function(){toast('Không phát được bản nhạc này.')};PV=a;var p=a.play();ml();if(p&&p.catch)p.catch(function(){toast('Chưa phát được nhạc, hãy thử lại.')})}
+function go(raw){OQ=raw;OS=1;OR=[];ml();srch(raw,8).then(function(r){if(OQ!==raw)return;OR=r;OS=2;ml()}).catch(function(){if(OQ!==raw)return;OS=3;ml()})}
+function ml(){var qi=$('#mq'),box=$('#ml');if(!qi||!box)return;var raw=qi.value.trim(),q=norm(raw);box.textContent='';
+function H(t){var h=document.createElement('h3');h.textContent=t;h.style.marginTop='14px';box.appendChild(h)}
+function N(t){var p=document.createElement('p');p.className='mute';p.textContent=t;box.appendChild(p)}
+function row(k,t,sub,play,on,use){var r=document.createElement('div'),h=document.createElement('p'),d=document.createElement('p'),a=document.createElement('button'),u=document.createElement('button');
+r.className='pn';h.textContent=t;h.style.fontWeight='500';d.className='mute';d.textContent=sub;
+a.className='b g';a.textContent=(PV&&PV.k==k&&!PV.paused)?'Dừng nghe':'Nghe thử';
+u.className='b';u.textContent=on?'Đang dùng':'Dùng bài này';a.onclick=play;u.onclick=use;r.append(h,d,a,' ',u);box.appendChild(r)}
+function useU(it){return function(){stopPv();M='url:'+it.u;MN=(it.t+' — '+(it.ra||it.a)).slice(0,80);setMusic();th();ml()}}
+if(!raw){H('5 bài mẫu để nghe thử');
+SM.forEach(function(x,i){row('s'+i,x.t,x.a,function(){pv2('s'+i,x)},!!x.u&&M=='url:'+x.u,async function(){if(!x.u){toast('Đang tìm bài…');try{await rsm(x)}catch(e){toast(NET);return}}useU(x)()})})}
+else{H('Kết quả trên mạng');
+if(OQ!==raw||OS==1)N('Đang tìm “'+raw+'”…');
+else if(OS==3)N(NET);
+else if(!OR.length)N('Không thấy bài nào khớp. Thử gõ cả tên bài lẫn tên ca sĩ.');
+else OR.forEach(function(x,i){row('o'+i,x.t,x.a,function(){pv2('o'+i,x)},M=='url:'+x.u,useU(x))})}
+}
+RT=th;th();
+$('#pc').onclick=function(){$('#fc').click()};
+$('#pa').onclick=function(){if(P.length>=12){toast('Album đã đủ 12 ảnh.');return}$('#fa').click()};
+$('#pr').onclick=function(){stopPv();M='';MN='';setMusic();th();ml()};
+$('#mq').oninput=function(){ml();clearTimeout(ST);var raw=this.value.trim();if(raw.length<2)return;ST=setTimeout(function(){go(raw)},600)};$('#mq').onkeydown=function(e){if(e.key=='Enter'){e.preventDefault();clearTimeout(ST);var raw=this.value.trim();if(raw.length>=2)go(raw)}};ml();
+$('#px').onclick=function(){stopPv();o.remove()};$('#ps').onclick=function(){stopPv();save()}}
+function start(){$('#app').innerHTML=page();setCover();drawAlb();cd();bindPh('g');bindPh('b');fx();
+$('#fc').onchange=async function(){var f=this.files[0];this.value='';if(f){try{C=await rz(f,1000);setCover()}catch(e){toast('Chưa đọc được ảnh này.')}RT()}};
+$('#rc').onclick=function(){C='';setCover();RT()};
+$('#fa').onchange=async function(){var fs=[].slice.call(this.files);this.value='';for(var i=0;i<fs.length&&P.length<12;i++){try{P.push(await rz(fs[i],900))}catch(e){}}drawAlb();RT()}}
+function own(cb){if(typeof claude==='undefined'||!claude||typeof claude.use!=='function'){if(!D.guest)cb();return}claude.use('user').then(function(u){if(u&&u.canEdit())cb()}).catch(function(){})}
+document.addEventListener('input',function(e){var t=e.target,d=t.dataset||{};
+if(d.k)document.querySelectorAll('[data-k="'+d.k+'"]').forEach(function(o){if(o!==t)o.textContent=t.innerText});
+if(d.p)cmp(t)});
+document.addEventListener('paste',function(e){if(e.target.isContentEditable){e.preventDefault();document.execCommand('insertText',false,(e.clipboardData||window.clipboardData).getData('text'))}});
+start();setMusic();intro();
+own(function(){bar();var f=null;try{f=sessionStorage.getItem('inv');sessionStorage.removeItem('inv')}catch(e){}if(f)toast('Đã lưu thiệp. Bấm Lưu file mời để tải file thiệp gửi khách.')});
+})();
+</script></body></html>
